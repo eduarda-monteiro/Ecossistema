@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <title> Banco de Dados </title>
+  <link rel = "shortcut icon" type = "image / x-icon" href = "/ favicon.ico">
+  <style>
+    body {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      background-color: rgb(173, 212, 196);
+    }
+    ul.nav { 
+  margin:0px; 
+  padding:0;
+  }
+  
+  ul.nav li {
+  list-style:none;	
+  display:inline;
+  }
+  ul.nav li a {
+  float:left;
+  border-top:0.1em solid #fff;
+  border-right:0.1em solid #909090;
+  border-bottom:0.1em solid #909090;
+  border-left:0.1em solid #fff;
+  width:24.6%;
+  height:1.5em;
+  font:0.68em  Verdana, Arial, Helvetica, 
+  sans-serif;
+  background:#f1f1f1;
+  color:#333;
+  text-align:center;
+  padding:0  0.2em 0.2em  0;
+  text-decoration:none;
+  }
+  ul.nav a:hover{
+  background:rgb(73, 81, 122);
+  color: #fff;
+  border-color:#000 #fafafa #fafafa #000;
+  }
+  .lateral{
+    position:relative;
+    float: left;
+    border-width:2px;
+    margin-top: 0%;
+    width:336px;
+    height: 16700px;
+    background-color: rgb(255, 255, 255);
+    }
+
+    .textoa{
+    background-color: rgba(239, 240, 235, 0.589);
+    border-radius: 30px 30px;  
+    position: relative;
+    float: right;
+    margin-right:187px;
+    margin-top: 40px;
+    text-align:justify;
+    width:700px;
+    height: auto;
+    left:none;
+
+    }
+    #logo {
+        position: absolute;
+        margin-left: 40px;
+    }
+    a {
+    color: rgb(194, 13, 13);
+    }
+    p {
+        font-size: 20px;
+    }
+</style>
+
+
+</head>
+<main>
+    <div align="center">
+    <img src="https://lh3.googleusercontent.com/DjOg6Yzj-pjD-GcKmvYp2AkAHkdORIPDO7zGEcYpaUeKjDrGV5zffuX4aLF01PM9wcrdiXsMjpTB5vi0KQfevjnTIA8nm9KqSVNlV4-vBUYqkbNYA5hddc2mqtQehEsA5ecnhDUXpLaQJrh0gizCrUuiG76zv4e2bl-N9SYHt_9BddQp18apWKI_-U_XoIrbYFXSAZzeBDiqtCyPvfrZgzwT8ibBhx6L2Q6eWD57g6Hj7QjE60enTbd1MaUpLdjcta2TzeNB34HxO0sZKufh3SXLYLXeXXfyEccnaptjnhBTIGtocud62y1el_JX4YsOVMv02SP8UTlcEM--1eUXvHRVBTYwevQbh3z3uLGaeon11JWZeIBpBLD_EtmZNT3if9eXGuUNCdMse0BlmrELx8V3PtIr3os6qjmtIcIyPnu_MiTfqEKxHaJxEffFh__U1v5JJ7Me0Yfa_AixJxD7921ILv_LQY4eRzg_wmwvnK90gOUEgNXMQGTuFDkH6oJQ2MjCl_5B-_pja52vbU7fyqbZJFX8eldZWnW5Ibc4bh8VhCbFcl2wxcFdW_6biSKst9pgjUIQjRj5aeBzg6AXilmhhtK0tMpDa6PnzEJzDOfptrmWLFfWMnWoqRG7Y83SQOuS8pGNc6zaB9JcMkmKClUctyGkaINnc6irTtNgX4fusSyiZKzoVvGkT9Y_LVk=w1367-h122-no?authuser=0" width="100%">
+    </div>
+    <ul class="nav" >
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Projeto_BD.html">Banco de Dados</a></li>
+        <li><a href="tpa.html">TPA</a></li>
+        <li><a href="ti_verde.html">TI Verde</a></li>
+    </ul>
+<div class="textoa">
+    <h1><p align="center">GRUPO A</p></h1>
+    <h1><p align="center"><b>Conceitos sobre Banco de Dados</b></p></h1>
+    <h2><p align="center">Conceitos básicos</p></h2>
+    <p>&nbsp;•Dado: fato do mundo real que está registrado 
+        <br></br>
+        exemplos: endereço, data, nome etc.</p>
+    <p>&nbsp;•Informação: fato útil que pode ser extraído direta ou indiretamente a partir dos dados
+        <br></br>
+        exemplos: endereço de entrega, idade...</p>
+        <p>&nbsp;•Banco de Dados (BD): coleção de dados inter-relacionados e persistentes que
+            representa um subconjunto dos fatos presentes em um domínio de aplicação (universo
+            de discurso) </p>
+        <p>&nbsp;&nbsp;Antes de entender o que é um banco de dados, é importante saber a diferença
+        entre as palavras “dados” e “informações”. Os dados são os fatos brutos, em sua forma
+        primária, e podem não fazer nenhum sentido quando estão isolados; já as informações
+        são o agrupamento de dados organizados, de forma que façam sentido e gerem algum
+        conhecimento.</p>
+        <p>&nbsp;&nbsp;Segundo Korth, um banco de dados “é uma coleção de dados inter-relacionados,
+        representando informações sobre um domínio específico”, ou seja, sempre que for
+        possível agrupar informações que se relacionam e tratam de um mesmo assunto, posso
+        dizer que tenho um banco de dados.”</p>
+        <p>&nbsp;&nbsp;Podemos exemplificar situações clássicas como uma lista telefônica, um catálogo
+        de CDs ou um sistema de controle de RH de uma empresa.</p>       
+    <h2><p align="center">SGBD</p></h2>
+        <p>&nbsp;&nbsp;Já um sistema de gerenciamento de banco de dados (SGBD) é um software que
+        possui recursos capazes de manipular as informações do banco de dados e interagir com
+        o usuário. Exemplos de SGBDs são: Oracle, SQL Server, DB2, Postgre, MySQL, o próprio 
+        Access ou Paradox, entre outros.</p>
+        <p>&nbsp;&nbsp;A informação é muitas vezes a coisa mais valiosa das empresas, mantê-las e
+        poder acessá-las sempre que necessário é primordial para tomar decisões importantes.
+        Mas controlar o acesso a essas informações também é importantíssimo. Já pensou se    
+        elas caíssem em mãos erradas? E a perda de informações? Já imaginou se estragasse o
+        HD do servidor onde está o banco de dados? Backup é uma forma de garantir que
+        informações não serão perdidas.</p>                
+        <p>&nbsp;&nbsp;Analisando os 5 primeiros SGBDs, te    mos Oracle em 1º lugar com um pequeno    
+        aumento no mês de março comparado com o mês de abril de 2020. O MySQL se mantém    
+        no 2º lugar e pode aparecer em 2020 como um concorrente forte para o primeiro lugar.
+        Em 3º lugar está a Microsoft SQL Server, que vem caindo de pontuação em relação a
+        março/2019. O PostgreSQL aparece em 4º lugar, já o MongoDB um banco de dados não
+        SQL (NoSQL) permanece em 5º lugar.</p>
+    <h2><p align="center">Abstração de dados</p></h2>
+        <p>&nbsp;&nbsp;O sistema de banco de dados deve garantir uma visão totalmente abstrata do banco de
+        dados para o usuário, ou seja, para o usuário do banco de dados pouco importa qual
+        unidade de armazenamento está sendo usada para guardar seus dados, contanto que
+        os mesmos estejam disponíveis no momento necessário.</p>
+        <p>&nbsp;&nbsp;Esta abstração se dá em três níveis:</p>
+        <p>&nbsp;1- Nível de visão do usuário: as partes do banco de dados que o usuário tem acesso de
+            acordo com a necessidade individual de cada usuário ou grupo de usuários;</p>
+        <p>&nbsp;2- Nível conceitual: define quais os dados que estão armazenados e qual o
+            relacionamento entre eles;</p>
+        <p>&nbsp;3 - Nível físico: é o nível mais baixo de abstração, em que define efetivamente de que
+            maneira os dados estão armazenados.</p>
+    <h2><p align="center">Modelo de dados</p></h2>
+        <p>&nbsp;&nbsp;Um modelo de dados são as ferramentas que o profissional escolhe para a
+            organização das informações e descrição de dados, relacionamentos...</p>
+        <p>&nbsp;&nbsp;Um projeto contém duas fases: Modelo Conceitual e Projeto Lógico</p>.
+        <p>&nbsp;&nbsp;Essas etapas preparam o banco de dados antes dele existir, evitando erros e
+            facilitando possíveis manutenções futuras.</p>
+        <p>&nbsp;&nbsp;O modelo conceitual é a descrição do BD de maneira independente ao SGBD, ou
+            seja, define quais os dados que aparecerão no BD, mas sem se importar com a
+            implementação que se dará ao BD. Desta forma, há uma abstração em nível de SGBD.
+            Uma das técnicas mais utilizadas dentre os profissionais da área é a abordagem
+            entidade-relacionamento (ER), onde o modelo é representado graficamente através do
+            diagrama entidade-relacionamento (DER)</p>
+        <p align="center"><img src="https://lh3.googleusercontent.com/VU-Eq4ezoET75WmS2q2snGIXx7bZU91lcRqERSlfQLl4RiHBxVnl1lc_UBCobjk9GW4875o3qHixVutruEkghLPxCta77J5uXCYcoQfCWTR0prFdUfQS47AV0OKdsFXiCO2DnLJmFAg-rNR_xeNuMe-t8YcZ_TpFCOOJ_TgYL4CgbdaFCSsXRvKLvMNhxIiKuhZNK7tfaeQWn3RTn-2fDQ8xMgtnIKVM62jWF7zb4lMGSAH8HRmZ09BbufmXKlI0K4sCwcbR4fY3gvRODrZnqWFk8k2tiZEcKW3jm2skbWztxWXo5VeLTYRzKl-KDDDVvj9yRBoQctAtg7Ed55hunkEu14SpOamq3jGwY5bFsmFzabVI4oyAeNrPnLQYxKYw_W8-HS3igLli1ibcKbIr0ltSsm1DhLz3pYlaW_p04qKub7_cAVzYWAhbXyqTVuVY-aVzh7d6yfMqk0t_wmdcQ4twxMVdm2XjEiSggc8S7Uwnn97LqQvanU57GdZaAqHTci24qxg1b1XFParSPqnOeUPPJKMnu4InXzmptsMAxXz4uWQ896MqIxddbr_4gHbcxW4prKc3S9JEztazRx2xOUoKSgUQ-Xc_2gX_fBn8udRV6xQdkqLokRTz6D93nqrLIomEK2CvrZ5bAlSacLhCzLxTMV05gnXgI2G89WKH388i5D5psp98V3H_hUTB334=w327-h217-no?authuser=0" alt="exemplo"></p>    
+        <p>&nbsp;&nbsp;O modelo lógico descreve o BD no nível do SGBD, ou seja, depende do tipo
+            particular de SGBD que será usado. Não podemos confundir com o Software que será
+            usado. O tipo de SGBD que o modelo lógico trata é se ele é relacional, orientado a
+            objetos, hierárquico etc. O SGBD relacional é o mais conhecido. Nele, os dados são
+            organizados em tabelas</p>   
+    <h2><p align="center">Modelagem de dados</p></h2>
+        <p>
+            &nbsp;&nbsp;Os modelos de dados são ferramentas que permitem demonstrar como serão
+            construídas as estruturas de dados que darão suporte aos processos de negócios, como
+            os dados estarão organizados e quais os relacionamentos que pretendemos estabelecer
+            entre eles.</p>
+        <p>    
+            &nbsp;&nbsp;Os principais objetivos da modelagem de dados são: representar o ambiente
+            observado, documentar e normalizar, fornecer processos de validação e observar
+            processos de relacionamentos entre objetos.  </p>
+    <h3><b><p>Esses modelos consistem em 3 perspectivas:</p></b></h3>
+        <p>&nbsp;1. Conceitual: Como representação de alto nível e com foco no ponto de vista do
+            usuário criador dos dados. É sempre o primeiro modelo a ser desenvolvido e
+            muito fácil de ser compreendido, pois não há limitações ou tecnologias
+            específicas.</p>
+        <p>&nbsp;2. Lógica: agrega detalhes de implementação e leva em conta as regras e algumas
+            limitações de recursos padronizados. Aqui é possível definir atributos que serão
+            as chaves para a estrutura.</p>
+         <p>&nbsp;3. Física: demonstra os dados fisicamente e leva em consideração todas as regras
+            e limitações do banco de dados. Obedece padrões e validações. E a partir daqui
+            que o modelo deve estar espelhado para o seu banco de dados final.</p>
+        <p>&nbsp;&nbsp;Embora Modelo Lógicos e Modelos Físico parecerem similares, e eles de fato são, o
+            nível de detalhes que eles modelam pode ser significativamente diferente. Isso porque
+            o objetivo de cada diagrama é diferente – podemos usar um Modelo Lógicos para
+            explorar conceitos do domínio com os envolvidos no projeto e Modelos Físico para
+            definir o projeto do banco de dados.</p>
+    <h2><p align="center">Modelagem Transacional e Informacional</p></h2>
+        <p>&nbsp;&nbsp;Os transacionais são aqueles projetados para atender à sistemas transacionais, ou
+            seja, que tenham foco nos dados provenientes de interações de um sistema
+            informatizado com suas fontes de dados. Ela prima armazenar e recuperar os dados
+            referentes àstransações. A preocupação nesse caso é com a normalização dos atributos,
+            útil ao processamento de informações imediatas e não ao gerenciamento e tomada de
+            decisões.</p>
+        <p>&nbsp;&nbsp;Por outro lado, a modelagem informacional – ou dimensional – tem objetivo oposto,
+            ela visa atender a necessidade da tomada de decisão e para isso se baseia em grandes
+            volumes de dados da base transacional. Nesse caso, o histórico é essencial e necessita
+            de muita armazenagem.</p>
+    <h2><p align="center">Sistemas Cliente-Servidor</p></h2>
+            <p> &nbsp;&nbsp;Na modelagem de dados também é importante saber sobre a estrutura fundamental
+                dos sistemas, que normalmente são Cliente-Servidor, e consiste em estações de
+                trabalho conectadas via rede aos servidores. Essas estações oferecem interfaces
+                apropriadas para uso dos servidores, bem como processamento para aplicações.</p>
+            <p>&nbsp;&nbsp;Já no sistema cliente-servidor de três camadas, a indicação é para web, já que possui
+                uma cada intermediária entre o cliente e o servidor de banco de dados. Essa camada é
+                o servidor de aplicações ou servidor web e pode armazenar regras de negócio para
+                acessar os dados do servidor.</p>
+    <h2><p align="center">Fundamentos</p></h2>
+            <p>&nbsp;&nbsp;Certos conceitos são utilizados na modelagem conceitual para descrever os papéis de
+                cada componente do domínio analisado. Dentre eles, podemos citar:</p>
+            <p>&nbsp;<b>Instância:</b>denomina uma ocorrência, um registro que existe ou passou a existir de uma
+                entidade;</p>
+            <p>&nbsp;<b>Entidade:</b>define qualquer coisa que seja identificável, singular e tenha existência bem
+                delimitada;</p>
+            <p>&nbsp;<b>Atributo:</b> é usado para referir-se à cada característica possuída pelas instâncias de uma
+                entidade ou de um relacionamento e sua representação no DER se dá em forma de
+                balões;</p>
+            <p>&nbsp;<b>Relacionamento:</b> descreve um evento significativo que ocorre entre instâncias de duas
+                entidades e é representado por um losango;</p>
+            <p>&nbsp;<b>Cardinalidade:</b> conceito usado para dizer quantas vezes uma instância de uma entidade
+                pode se relacionar com instâncias de outra entidade, também referenciado como “grau
+                de relacionamento”;</p>
+            <p>&nbsp;<b>Condicionalidade:</b> responsável por comunicar se a existência de uma instância de uma
+                entidade está condicionada à existência de uma instância de outra entidade.
+                </p>
+        <h2><p align="center">Relacionamentos entre instâncias de entidades</p></h2>
+            <p>
+                &nbsp;&nbsp;São comumente efetivados com estas 3 cardinalidades: </p>
+            <p>&nbsp;<b>“Um” para “Um” (1:1):</b> uma instância de uma entidade pode ou deve se relacionar com
+                uma e apenas uma instância de outra entidade;
+                </p>
+            <p>&nbsp;<b>“Um” para “Muitos” (1:N):</b> uma instância de uma entidade pode ou deve se relacionar
+                com uma ou mais instâncias de outra entidade — é com toda certeza a cardinalidade
+                mais encontrada em bancos de dados; e
+                </p>
+            <p>&nbsp;<b>“Muitos” para “Muitos” (N:N):</b> uma ou mais instâncias de uma entidade podem ou
+                devem se relacionar com uma ou mais instâncias de outra entidade — esse tipo de
+                relacionamento transforma-se em uma entidade a partir da modelagem lógica.</p>
+        <h2><p align="center">Condição de relacionamentos</p></h2>
+            <p>&nbsp;&nbsp;Podem ser regidos sob 2 condicionalidades (exemplificadas abaixo):           
+                </p>
+            <p>&nbsp;<b>Parcial:</b> quando instâncias de uma entidade Telefone podem estar relacionadas com
+                instâncias de Pessoa em uma agenda, ou seja, onde o cadastro de números de telefone
+                sem nome é permitido; e</p>
+            <p>&nbsp;<b>Total:</b> quando instâncias de uma entidade Carro devem estar relacionadas com
+                instâncias de Cliente para entrar em uma oficina, ou seja, onde o cadastro de carros sem
+                dono é proibido.
+                </p>
+        <h2><p align="center">Entidades de uma relação 1:N</p></h2>
+                <p>&nbsp;&nbsp;Duas categorias são usadas para defini-las:
+                </p>
+            <p>&nbsp;<b>“Fortes”:</b> para entidades do lado 1 da relação; e
+            </p>
+            <p>&nbsp;<b>“Fracas”:</b> para entidades do lado N.</p>
+        <h2><p align="center">Projeto de Banco de Dados</p></h2>
+            <p>&nbsp;&nbsp;O projeto de banco de dados é fundamental para o sucesso na implementação da
+                tecnologia de banco de dados em uma empresa. Para pequenos sistemas muitas vezes
+                o responsável pelo projeto parte diretamente para a criação do banco de dados físico e
+                em seguida a criação das tabelas, colunas e índices. Porém quando se pensa em um
+                banco de dados para uma empresa grande, dependendo do tamanho do projeto é
+                fundamental um bom processo de projeto de banco de dados para que se possa
+                garantir que o usuário terá todos os seus requisitos de informação atendidos na forma
+                de informações disponíveis no banco de dados, além de outras considerações já vistas
+                anteriormente tais como disponibilidade, desempenho e confiabilidade do banco de
+                dados.
+                </p>
+            <p>&nbsp;&nbsp;Um projeto de banco de dados é caracterizado por um processo que possui fases
+                distintas e com aspectos diferentes, mas que tem como objetivo final a implementação
+                de um banco de dados que atenda às necessidades de informação do usuário e aos
+                requisitos não funcionais de disponibilidade, desempenho e confiabilidade esperados.
+                </p>
+            <p>&nbsp;&nbsp;As Três fases que fazem parte de um projeto de banco de dados:
+            </p>
+        <p>&nbsp;<b>1 - Modelo conceitual –</b> Representa os conceitos do negócio e as associações
+            existentes entre estes conceitos. Também são representados os atributos assim como
+            as regras de negócio que regulam as associações e conceitos do negócio. Este modelo
+            é independente da tecnologia de implementação usada para o banco de dados e por
+            isto é a etapa mais adequada para o envolvimento do usuário que não precisa ter
+            conhecimentos técnicos. As características principais deste modelo são:</p>
+        <p>&nbsp;Visão Geral do negócio
+        </p>
+        <p>&nbsp;Facilidade de entendimento entre usuários e desenvolvedores</p>
+        <p>&nbsp;Possui somente as entidades, relacionamentos e atributos principais
+            </p>
+        <p>&nbsp;&nbsp;<b>Os principais produtos da fase de projeto conceitual são:</b></p>
+        <p>• O diagrama de entidade e relacionamentos, também conhecido por modelo de
+            entidade relacionamentos;<br></p>
+        • Lista de Regras de Restrição de Integridade.
+        </p>
+        <p><b>2- Modelo Lógico–</b>Representa as estruturas de dados a serem implementadas e
+            suas características considerando os limites impostos pelo modelo de dados usado
+            para implementação do banco de dados. (banco de dados hierárquico, banco de dados
+            de rede, banco de dados relacional etc.). As características principais deste modelo
+            são:</p>
+        <p>
+            • É derivado do modelo conceitual<br>
+            • Possui entidades associativas em lugar de relacionamentos n:m<br>
+            • Define as chaves primárias das entidades<br>
+            • Define as chaves estrangeiras entre as entidades<br>
+            • Normalização até a 3° forma normal<br>
+            • Adequado ao padrão de nomenclatura adotado pela empresa<br>
+            • As Entidades e atributos são documentados em um Dicionário de Dados.
+        </p>
+        <p>&nbsp;&nbsp;O principal produto da fase de projeto lógico é o modelo relacional.</p>
+        <p>&nbsp;<b>3- Modelo Físico – </b>Este modelo representa a implementação do modelo lógico
+            considerando algum tipo particular de tecnologia de banco de dados e os requisitos
+            não funcionais (desempenho, disponibilidade, segurança) que foram identificados pelo
+            analista de requisitos. As características principais deste modelo são:</p>
+        <p>• Elaborado a partir do modelo lógico<br>
+            • Pode variar segundo a tecnologia usada para implementação do banco de
+            dados<br>
+            • Possui tabelas físicas (log, líder etc.)<br>
+            • Possui colunas físicas (replicação)</p>
+        <p>&nbsp;&nbsp;No modelo físico, a linguagem SQL (Structured Query Language), é a linguagem padrão
+            para definição, manipulação e controle de uso das estruturas de dados.
+            </p>
+        <p>&nbsp;&nbsp;Existem muitos Sistemas Gerenciadores de Banco de Dados disponíveis no mercado.
+            Como exemplo, podemos citar o PostgreSQL e o MySQL, que tem código aberto e são
+            gratuitos. Também existe o Oracle, DB2, Sybase SQL Server, Informix e Microsoft SQL
+            Server, que são pagos e não possuem código aberto, sendo bastante usados em
+            corporações.
+            </p>
+    <h2><p align="center">Etapas no projeto de um Banco de dados:</p></h2>
+        <p>&nbsp;• Determinar qual o objetivo do projeto de Banco de Dados: Isto ajuda na
+            determinação de quais os dados devem ser armazenados. É fundamental ter
+            bem claro qual o objetivo a ser alcançado com o banco de dados. É fazer o
+            acompanhamento das despesas, pedidos dos clientes, multas de trânsito, a
+            evolução das vendas ou outro objetivo qualquer.<br></p>
+            <p>
+            &nbsp;• Determinar as Entidades necessárias: Após definirmos os objetivos do Banco
+            de Dados, as informações devem ser definidas e separadas em assuntos
+            diferentes, tais como "Clientes", "Empregados", "Pedidos", pois cada um irá
+            compor uma tabela no banco de dados. É importante considerar que conceitos
+            diferentes devem ser representados como entidades e relacionamentos
+            diferentes. Isto significa que não devemos misturar conceitos, assuntos,
+            representando todos como apenas uma única entidade.<br></p>
+            <p>
+            &nbsp;• Determinar os Atributos de cada Entidade: Definir quais informações devem ser
+            mantidas em cada entidade. Por exemplo, a entidade Clientes poderia ter um
+            atributo para o CPF Do Cliente, outro para o Nome Do Cliente e assim por
+            diante.<br></p>
+            <p>
+            &nbsp;• Determinar o identificador de cada Entidade: Determinar, em cada entidade,
+            qual(is) atributo(s) será(ão) utilizado(s) como identificador de cada ocorrência
+            na entidade.<br></p>
+            <p>
+            &nbsp;• Determinar os Relacionamentos: Determinar as associações existentes entre as
+            entidades do modelo de dados, identificando de que forma as entidades se
+            relacionam, e representando os relacionamentos entre as entidades,
+            detalhando a cardinalidade entre os relacionamentos. A cardinalidade
+            especifica o número de vezes que uma ocorrência de uma entidade pode estar
+            associada a ocorrências da outra entidade. Por exemplo, Clientes podem Fazer 
+            Vários Pedidos, então existe um relacionamento do tipo Um-para-vários entre a
+            tabela Clientes (lado um) e a tabela Pedidos (lado vários).<br></p>
+            <p>
+            &nbsp;• Normalizar a Estrutura do Banco de Dados: Antes de inserir muitos dados, ou
+            até mesmo antes de inserir qualquer dado, verificar se a estrutura contém
+            redundância de atributos nas entidades, eliminando a possibilidade de
+            inconsistência nos dados causada por anomalias de atualização devido a
+            redundância de atributos. Isto, normalmente, pode ser obtido através do
+            processo de Normalização.<br>
+            </p>
+    <h2><p align="center">DER</p></h2>
+            <p> &nbsp;&nbsp;DER, é a abreviação de Diagrama de Entidade Relacionamento. Esse diagrama nada
+                mais é do que uma representação gráfica do MER (Modelo de entidade
+                Relacionamentos). Em termos conceituais, podemos dizer que “Diagrama de Entidade
+                Relacionamento “ é um modelo diagramático que descreve um modelo de dados.
+                </p>
+                <p> &nbsp;&nbsp;Na elaboração de um projeto de banco de dados, diagramas ER são usados para modelar
+                    e criar bancos de dados relacionais, na parte das regras lógicas desse negócio, em um
+                    modelo lógico de dados e no termo de tecnologia específica a ser colocada ( no modelo
+                    físico de dados).                    
+                    </p>
+                <p>&nbsp;&nbsp;Em um modelo DER possuímos as entidades sendo substantivos concretos ou
+                    abstratos onde é possível guardar dados. Existem as entidades fortes, entidades fracas
+                    e entidades associativas. 
+                    </p>
+                <p>&nbsp;&nbsp;Um modelo DER possui também os relacionamentos que são uma ação entre as
+                    entidades, representados por um losango. Cada relacionamento possui uma
+                    cardinalidade que representa o número de interações entre as entidades. As
+                    cardinalidades podem ser de: 1-1(um para um), N-1(um para muitos) ou N-N(muitos
+                    para muitos). 
+                    </p>
+                <p>&nbsp;&nbsp;Cada entidade possui uma característica chamada de atributo. Eles podem ser
+                    descritivos, nominativos ou referenciais. Além disso existem os atributos Simples e
+                    Compostos. Quando um atributo representa um valor único da entidade é chamado de
+                    Atributo Identificador.
+                    </p>
+                <p>&nbsp;&nbsp;Exemplo de DER:</p>
+                <p align="center"><img src="https://lh3.googleusercontent.com/kzUuttHD7mAQuGeSCGACroCGEad2QoWytN3FabSBcMfBgDFV_WXNGD0vQgRIc6TrDQUjZJ4DLF5HqgyABhfzevfrMHpaW5WqV9FXQ7-PA5MRaGbffRWI6fx5kZKNE_Bam2aqcbpxeA2VEk1hc1PnggYsLZtts9cWVnrBMEnGj5UEEXG3xQd0hV3cQ2KPW6jyUoVDH_EZ6GWShzREDKfAEpITwpY_2ftd8wTUBBWj0BpwEnUwUEagD3XK7PWoAtNPWoxl8LFlsY5yfpXokR05gPHbMjeJbeYHOG81LpTgDYcA5gCHIhIlGKJc-p-tzUkvPleyOQAZ01DRQcre9A-Za20DRh_WN9OAGCWdNkn1UbrLc0l4RXl6uE44eJ9uXJ85Thr_czQ2Zm4RbVNoUDbt9qXxu19-tjIOw1Bg-1wY_2G0QM-5dfDYuH727-hdehD8oAFnlOB632MdmLFiE3m3XVo8PAsBCVACBLlYEQHKcUGinXL9Qc9bJCHYcjpzobLPOOis7BaJ5Vq_m4OpxOXaAcPQ-GjFecV-g4fRoxuWE89rTgiE3cAt2d6HvRnnmapYBh6oWUt4WT4u9v7mhdJvEG7Rj_29A8mMxTsDU7VN0-Vum6DpdBZgEjTa2VKWVukv6sQ4i6-TZUihEw1HOKHUryYx-9VdaoE4-PlpXkFX-byWC6UNzGH0yegQS_xaFJE=w561-h154-no?authuser=0" alt="Exemplo de DER"></p>
+                <h2><p align="center">MLR</p></h2>
+                <h3><p align="center"></p>Modelo lógico relacional</p></h3>
+                <p>&nbsp;&nbsp;Um modelo relacional é um modelo de dados representativo (ou de implementação),
+                    adequado a ser o modelo subjacente de um SGBD, um banco de dados construído
+                    puramente baseado no modelo relacional estará inteiramente normalizado. A ideia de
+                    modelo relacional se baseia no princípio de que as informações em uma base de dados
+                    podem ser consideradas como relações matemáticas e que podem ser representadas,
+                    de maneira uniforme, através do uso de tabelas onde as linhas representam as
+                    ocorrências de uma entidade e as colunas representam os atributos de uma entidade
+                    do modelo conceitual.
+                    </p>
+                <p>&nbsp;Exemplo de modelo lógico relacional:
+                </p>
+                <p align="center"><img src="https://lh3.googleusercontent.com/tb0iGiwFeGiZZonAnEGUcLMFxPn0uR7giZu_BNXaRsTQaCfIWY3jFi8kVA7JKZaWBZfpecAUpPUD-PIs80jpEbES6UsU8SDs5NG3QMaDK9ws8bA3Ce1Dyv5MzmXjCUSul5ysg5NZqrkAGOOd1-hzME_jtbz16iQhnb5LqsS8r3HRe1ZwiwV8qXcR9O06C-_z9d2zZKLOYurLdsbLjokpg8fNtwK5c2ZWl2oYzjgG-H5BDD2hs1WH-9qPvUdXt7nHgnZ4qWA2qxc8LCBrzF9tnEzT6eq2HhfuvHjC6r0nRcAEbEuKxwCQsnAVsTiJHSWDggoQer6USQyppXShC8qgd35IaZoj__NAh07pdyayfXozyRqT5-E_FlQZpHY6Ou2p7YgOpFlqFqwKtb_pE_FSd3kGBbrznmOUCw3r8-vuS03pE2BSqG21btvuFKcUHTcmgYdsJx9NKXTiZ9ocyoFpCSx0GJje_AQvzsR9DwrnH5mlw7wiwNWOcOHTmDizXi67eLHxw8SAWbSQg28TNqOZXEF1ld6WfV5FwCdLVItagMY8gO0ix_ZVEbXHq1AD6yHZo98EqzT83khsPXophw34rMycSKYuQlJRFkf0nwyu1EC2iDzn9UnY_kL2RXXnnc0_441KV-ixuAX5WYGA-GUF5c94O066QjQFzezZ5i6jSEW-UaUuAX8eVRrQZduDqm0=w201-h347-no?authuser=0" alt="exemplo MLR"></p>
+                <h2><p align="center">Principais Vantagens do Modelo Relacional:</p></h2>
+                <p>&nbsp;• Independência total dos dados;<br>
+                    &nbsp;• Visão múltipla dos dados;<br>
+                    &nbsp;• Redução acentuada na atividade de desenvolvimento. Particularmente para
+                    extração de dados para relatórios e consultas específicas do usuário;<br>
+                    &nbsp;• Maior segurança no acesso aos dados;<br>
+                    &nbsp;• Maior agilidade para consulta/atualização;<br>
+                    &nbsp;• Qualidade dos dados garantida por restrições de integridade.
+                    </p>
+            <h2><p align="center">História sobre a criação dos Bancos de Dados
+                e Modelo Físico
+                </p></h2>
+                <p>&nbsp;&nbsp;Antigamente muitas empresas armazenavam seus dados em arquivos físicos, porém
+                    com o tempo a necessidade de haver alguma ferramenta para facilitar esse processo foi
+                    aumentando.</p>
+                    <p>&nbsp;&nbsp;Por volta do final dos anos 1970 surgiu um sistema baseado nas ideias de Edgar Frank
+                    Codd, um pesquisador da IBM que no começo da década havia realizado um artigo
+                    intitulado “A Relational Model of Data for Large Shared Data Banks”. Com esse sistema
+                    chamado de “Sistema R” também foi criado a linguagem de consulta estruturada (SQL -
+                    Structured Query Language).</p>
+                    <p>&nbsp;&nbsp;
+                    Com o passar do tempo muitos sistemas de banco de dados foram baseados no Sistema
+                    R. Hoje possuímos dois tipos de SGBDS (Sistema gerenciador de banco de dados), sendo
+                    eles:
+                    </p>
+                    <p>&nbsp;• Relacionais: Modelam seus dados em formas de tabelas que se relacionam entre
+                        si, possuindo diversos atributos e tipos de dados diferentes.<br>
+                        &nbsp;• Não-relacionais(NoSQL): São sistemas onde não é utilizado SQL como linguagem
+                        de consulta, são bem conhecidos por sua facilidade no desenvolvimento,
+                        utilizando diversos modelos de dados, entre eles: documentos, gráficos, chavevalor e colunares.</p>
+                    <p>&nbsp;&nbsp;Dentre os Principais SGBDS utilizados pelo mundo estão: OracleDB, MySQL,
+                        SQLServer, PostgreSQL e DB2. Cada um se destacando por diversos motivos, seja
+                        pela facilidade, segurança, recursos avançados, etc.</p>
+                <h2><p align="center">Regras Modelo Físico</p></h2>
+                <p>&nbsp;• Restrições são regras aplicadas nas colunas de uma tabela.<br>
+                    &nbsp;• São usadas para limitar os tipos de dados que são inseridos.
+                    </p>
+                <h3>&nbsp;Principais Constraints do SQL:
+                </h3>
+                <p>&nbsp;• NOT NULL<br>
+                    &nbsp;• UNIQUE<br>
+                    &nbsp;• PRIMARY KEY<br>
+                    &nbsp;• FOREIGN KEY<br>
+                    &nbsp;• CHECK<br>
+                    &nbsp;• DEFAULT</p>
+                    <h3>&nbsp;Restrição NOT NULL:</h3>
+                    <p>&nbsp;• A constraint NOT NULL impõe a uma coluna a NÃO aceitar valores NULL.<br>
+                        &nbsp;• A constraint NOT NULL obriga um campo a sempre possuir um valor.<br>
+                        &nbsp;• Deste modo, não é possível inserir um registro (ou atualizar) sem entrar com
+                    um valor neste campo.</p>
+                    <h3>Restrição UNIQUE</h3>
+                      <p>&nbsp;• A restrição UNIQUE identifica de forma única cada registro em uma tabela de
+                        um banco de dados.<br>
+                        &nbsp;• As constraints UNIQUE e PRIMARY KEY garantem a unicidade em uma coluna
+                        ou conjunto de colunas.<br>
+                        &nbsp;• Uma constraint PRIMARY KEY automaticamente possui uma restrição UNIQUE
+                        definida.<br>
+                        &nbsp;• Você pode ter várias constraints UNIQUE em uma tabela, mas apenas uma
+                        Chave Primária por tabela.</p>
+                    <h3>&nbsp;Restrição FOREIGN KEY</h3>
+                     <p> &nbsp;• Uma FOREIGN KEY (Chave Estrangeira) em uma tabela é um campo que aponta
+                        para uma chave primária em outra tabela.</p>
+                    <h3>&nbsp;Restrição CHECK</h3>
+                       <p> &nbsp;• A constraint CHECK é usada para limitar uma faixa de valores que podem ser
+                        colocados em uma coluna.<br>
+                        &nbsp;• Se uma constraint CHECK for definida em uma única coluna ela permitirá
+                        apenas determinados valores para a coluna.<br>
+                        &nbsp;• Se a constraint CHECK for definida para a tabela, ela poderá limitar os valores
+                        em algumas colunas com base nos valores de outras colunas do registro.</p>
+                    <h3>&nbsp;Restrição DEFAULT</h3>
+                    <p>&nbsp;• A restrição DEFAULT é usada para inserir um valor padrão em uma coluna.<br>
+                        &nbsp;• O valor padrão será adicionado a todos os novos registros caso nenhum outro
+                        valor seja especificado.</p>
+                    <h2><p align="center">Modelo Físico</p></h2>
+                    <p>&nbsp;O modelo físico é um modelo de baixo nível onde se leva em consideração as
+                        limitações do SGBD e é formado por comandos SGBD para criar tabelas usando
+                        como referência o modelo lógico.<br>
+                        &nbsp;Cada SGBD tem seus tipos de dados mas os principais são: numérico, data e
+                        tempo e string podendo ter a quantidade de caracteres fixa ou variável.
+                        </p>
+                    <hr>
+                    <h1><p align="center">GRUPO B</p></h1>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/Co261qNbZolAAgF7k1GwbOygi9vqviS5XUowAXYOJ25GN1YsfE2ZHIv1JH9SBeN0sRLzNW_hp9XTmvqlBF6vJ8_nqpiEoaenIIBzP6z-V8mmMEGQKdyOhnoapNww6HyCnekxSJ40erXqePkWiF235e0zHyPjKUb_gpAOiFnf7DqHzZVURfRkb4bCPi0gVy6SslUVSuFuYd33ck1lbskUnJvGaWAPy6c5hidQDZfgFRpzyMaJx4BBG-iWNtMNJeU8zRyobmTsqpceHcnjkq9vaT90vwGKXE3xSHQv1LFLwGmDfKMALL6Sw_GG0nDb8iBlWEQm5qWgr-LhbVzCGAt79_frjOss9QrR8v-b4Chf5PEJfR8maqd6RyHhwg-WgJK26W-zcs0FwE1NlJNEcd-qM1OTJlCuiQ9kUjwWBwaMRzSBJIarJP3G8sxslqkCjThWQwHmJWGOKCACUMRawAZ-CyRAUdqgn0i4QHtdHlztSSjnd5tvw0X8iZC0R0iV3PfQqQLt3WcApq02GGfF2CqJMm29ZM_5FhcFhkxTH2_IR6rRmSJQG_QRc6xjmSvCwZoq1685_6DofO5WYPPKO2Jj4RJWwUifHrW36tWh0DtUtf8xKNVSxLGtAn81oi6B2tYvY4VZt9gheZp_yN4abBXFvZ0E7YpgLyo5IIJUp0jTAM0lmajVJWYVLcC_ODEjW3M=w916-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/Co261qNbZolAAgF7k1GwbOygi9vqviS5XUowAXYOJ25GN1YsfE2ZHIv1JH9SBeN0sRLzNW_hp9XTmvqlBF6vJ8_nqpiEoaenIIBzP6z-V8mmMEGQKdyOhnoapNww6HyCnekxSJ40erXqePkWiF235e0zHyPjKUb_gpAOiFnf7DqHzZVURfRkb4bCPi0gVy6SslUVSuFuYd33ck1lbskUnJvGaWAPy6c5hidQDZfgFRpzyMaJx4BBG-iWNtMNJeU8zRyobmTsqpceHcnjkq9vaT90vwGKXE3xSHQv1LFLwGmDfKMALL6Sw_GG0nDb8iBlWEQm5qWgr-LhbVzCGAt79_frjOss9QrR8v-b4Chf5PEJfR8maqd6RyHhwg-WgJK26W-zcs0FwE1NlJNEcd-qM1OTJlCuiQ9kUjwWBwaMRzSBJIarJP3G8sxslqkCjThWQwHmJWGOKCACUMRawAZ-CyRAUdqgn0i4QHtdHlztSSjnd5tvw0X8iZC0R0iV3PfQqQLt3WcApq02GGfF2CqJMm29ZM_5FhcFhkxTH2_IR6rRmSJQG_QRc6xjmSvCwZoq1685_6DofO5WYPPKO2Jj4RJWwUifHrW36tWh0DtUtf8xKNVSxLGtAn81oi6B2tYvY4VZt9gheZp_yN4abBXFvZ0E7YpgLyo5IIJUp0jTAM0lmajVJWYVLcC_ODEjW3M=w916-h657-no?authuser=0" alt=DER width="500" height="400"></a></p>
+                    <p align="center">Para uma resolução maior, clique na imagem e voce será redirecionado para uma outra página.</p>
+                    <hr>
+                    <h1><p align="center">GRUPO C</p></h1>
+                    <p align="center">Para maior resolução clique nas imagens.</p>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/uVyJPUEUAPM0vCTqZMI2DU6cBwyG-twEAqnZggbeejEEH7Ku-BPYFzTRNaO0Eg_SYe0-xQcqtRWHqxzim7h6gB_uEglaOoxHI6dPaOcth-uLlduafmxzKkzyeakZhsmb7FDkceR8kCsOrpo4gPB0vZ4jas2R2IgafFJa8qLvHlP66iV7SPTaX0zYhixu6MMHEUSTcGXsUwL6WB_b9AD5mP5oqQMvbQ3P9S0apCXbNcMXDnfVM5TCbShKXSdMa0tVPS5IojfMjPobzPxozulXB9Y7PgvVekoBu9qyaOmGBlUfoLjke5gSak-QNl3w66KhXn36KjfSOnzzHTlklpR93SRi8Zi4puomYJhcIDIfCUQ0ISEE_XBXVq70fLS8ofwzKgoIGetKpMvIkj3aK9Dw07yw-1ZnomDuCMC_FyO9w_3sA3krpGCTaIXmlx4OLf1d8qYN5MtkPwENDU3ZidOkmZ9nQZN-IKTgOFlXitlj5lBji8euWGc9QnocSGiWzdQocozVbqPkK5oToEG5nUw8vTg5_SCLdfgQ9sS5oeY3Go5zxWha2koPgiHDpKrmT4Te97_QuAo6psu-J2mwOAwmo2bmDf5YYBpUMkSb2YcTBxLPgah9uRTOOvezNKmnd9JpKTDMa3wmI76rafeimcA4xxP02a4ThWlm8zo8v-WDuuOr-MZMBPaU9_mjvHootU4=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/uVyJPUEUAPM0vCTqZMI2DU6cBwyG-twEAqnZggbeejEEH7Ku-BPYFzTRNaO0Eg_SYe0-xQcqtRWHqxzim7h6gB_uEglaOoxHI6dPaOcth-uLlduafmxzKkzyeakZhsmb7FDkceR8kCsOrpo4gPB0vZ4jas2R2IgafFJa8qLvHlP66iV7SPTaX0zYhixu6MMHEUSTcGXsUwL6WB_b9AD5mP5oqQMvbQ3P9S0apCXbNcMXDnfVM5TCbShKXSdMa0tVPS5IojfMjPobzPxozulXB9Y7PgvVekoBu9qyaOmGBlUfoLjke5gSak-QNl3w66KhXn36KjfSOnzzHTlklpR93SRi8Zi4puomYJhcIDIfCUQ0ISEE_XBXVq70fLS8ofwzKgoIGetKpMvIkj3aK9Dw07yw-1ZnomDuCMC_FyO9w_3sA3krpGCTaIXmlx4OLf1d8qYN5MtkPwENDU3ZidOkmZ9nQZN-IKTgOFlXitlj5lBji8euWGc9QnocSGiWzdQocozVbqPkK5oToEG5nUw8vTg5_SCLdfgQ9sS5oeY3Go5zxWha2koPgiHDpKrmT4Te97_QuAo6psu-J2mwOAwmo2bmDf5YYBpUMkSb2YcTBxLPgah9uRTOOvezNKmnd9JpKTDMa3wmI76rafeimcA4xxP02a4ThWlm8zo8v-WDuuOr-MZMBPaU9_mjvHootU4=w466-h657-no?authuser=0"></a></p>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/YImgFleMovws77n3rOnkKCO6CkCB1ykwT6kUV02Y9Gk9SOqDTgGhfUtMwJw4unttsr_1s5WY4cKxXUR6gbSoIJ3GMlqvqLetWcSmGLl_xXJE4wNfx0qT0ovzH7QJZQt_-CNxWjcgoxsEYlWVXObVBt44ZsS5CeSP-TYrbGsqI3r4sr78QWDNPiJ7D6Z8p1DMvIinXu9-GXQgk8WTdmXhcOThPc_qNP2m-RCYwXtSl9LLR-bd9_7xbz-w7fulrVpoczVfA3bAZbhDcHkS407MuzxvdL0zImmjIFM-4gNJF-nKSMqHDCKIA8j3vCWOGKpbPpkskXww0y80jPK4kysG3a2Qud5KEykQVRz5-I0wF0zw4CUWg9LCTh2uBJcKGz3t8-5d_8PwC7UGCHiC19VbTSu9OH8mSlErXfVlua4F6RJZbrMK4qjHu0jq3QrAbEs2-71q053DDm6F9C7LS_KSYtoadcsIsdPZ94gpSREaE0c1NMl0mqdCfxI5raKb6MHNxwLXnGg8vx-pJET3l2F0m_Mb8igvH6fIopmaVjtmQUQHeFAL1o1Mnc8aKG1veX6IKO67mPwF-sBzAJF9tXrecObL4DHgOcGq1RZN5ZHZkDfj03kMUjdOaPb13IznDgbmiynVXSS8s4RxYF3vWwx1gZvzhzvej4mxnaBJJ9ugvWgM6UhJgUevpvMF8yfe8sc=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/YImgFleMovws77n3rOnkKCO6CkCB1ykwT6kUV02Y9Gk9SOqDTgGhfUtMwJw4unttsr_1s5WY4cKxXUR6gbSoIJ3GMlqvqLetWcSmGLl_xXJE4wNfx0qT0ovzH7QJZQt_-CNxWjcgoxsEYlWVXObVBt44ZsS5CeSP-TYrbGsqI3r4sr78QWDNPiJ7D6Z8p1DMvIinXu9-GXQgk8WTdmXhcOThPc_qNP2m-RCYwXtSl9LLR-bd9_7xbz-w7fulrVpoczVfA3bAZbhDcHkS407MuzxvdL0zImmjIFM-4gNJF-nKSMqHDCKIA8j3vCWOGKpbPpkskXww0y80jPK4kysG3a2Qud5KEykQVRz5-I0wF0zw4CUWg9LCTh2uBJcKGz3t8-5d_8PwC7UGCHiC19VbTSu9OH8mSlErXfVlua4F6RJZbrMK4qjHu0jq3QrAbEs2-71q053DDm6F9C7LS_KSYtoadcsIsdPZ94gpSREaE0c1NMl0mqdCfxI5raKb6MHNxwLXnGg8vx-pJET3l2F0m_Mb8igvH6fIopmaVjtmQUQHeFAL1o1Mnc8aKG1veX6IKO67mPwF-sBzAJF9tXrecObL4DHgOcGq1RZN5ZHZkDfj03kMUjdOaPb13IznDgbmiynVXSS8s4RxYF3vWwx1gZvzhzvej4mxnaBJJ9ugvWgM6UhJgUevpvMF8yfe8sc=w466-h657-no?authuser=0"></a></p>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/1XupKs45Q4q67NGyeE0O_zZ1aPisCu4W3etJDmYIw3RM8xpUxSPtyBXhA0bWIrFq-fVFr8VZ7n9yp5ahnVCzGVOxoKXLNe0ezNCnbREpO0pXj3zPcMLNGOc3WUUHpMXnJtGeytUah8MrwfNnLAr1cMyyOSfGK_uJ5vVvWiR75ex7dVpUM4uqaSCDbiliPy8toTR1SJubXlaEBALUcg-e2LiC3bpq-mY3d1xVjgTkXUMvGG__J3OlMyZWPH4jMOUDhWDdA-y4n4DHwllTU4vEnQz99MUdEQkV81xmk5Gxt3Z3Kz3UD8f7iwmxkQ07rOY9t1rtB-d0r1egcNsR1GFRvl1JR-4Zg2q6CDJV6W1ikuQch8dtIc962gqfS93H9cdRwy44iqIi_U5BsjLU9XU55CPErCHsdOWkL_rTzXldJHuvapFLS-HHepWtJ4L412h5aQDEvHsl5k9BJRPPzPANQhb8s-5U7cSpkYN3oGIBdiZkp-KpaQapZqdBbSLFgsZnFLaAbggOCtEy4vqDy1mP60uVSVOGGUASiFeQHLQqLB4goiI7bTzouC6fGdBUHQKGmBjlK_dUtGwDi0L7628k4qUfYqOwilye8Yhr37bqTkY4ID2bcKApDevZGaVw-HvVcVOoKQzTa55u7om7-oLaZH_X8Ufm2YuE7ps75of0S2bFBCR6PRgk7rR54ruH178=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/1XupKs45Q4q67NGyeE0O_zZ1aPisCu4W3etJDmYIw3RM8xpUxSPtyBXhA0bWIrFq-fVFr8VZ7n9yp5ahnVCzGVOxoKXLNe0ezNCnbREpO0pXj3zPcMLNGOc3WUUHpMXnJtGeytUah8MrwfNnLAr1cMyyOSfGK_uJ5vVvWiR75ex7dVpUM4uqaSCDbiliPy8toTR1SJubXlaEBALUcg-e2LiC3bpq-mY3d1xVjgTkXUMvGG__J3OlMyZWPH4jMOUDhWDdA-y4n4DHwllTU4vEnQz99MUdEQkV81xmk5Gxt3Z3Kz3UD8f7iwmxkQ07rOY9t1rtB-d0r1egcNsR1GFRvl1JR-4Zg2q6CDJV6W1ikuQch8dtIc962gqfS93H9cdRwy44iqIi_U5BsjLU9XU55CPErCHsdOWkL_rTzXldJHuvapFLS-HHepWtJ4L412h5aQDEvHsl5k9BJRPPzPANQhb8s-5U7cSpkYN3oGIBdiZkp-KpaQapZqdBbSLFgsZnFLaAbggOCtEy4vqDy1mP60uVSVOGGUASiFeQHLQqLB4goiI7bTzouC6fGdBUHQKGmBjlK_dUtGwDi0L7628k4qUfYqOwilye8Yhr37bqTkY4ID2bcKApDevZGaVw-HvVcVOoKQzTa55u7om7-oLaZH_X8Ufm2YuE7ps75of0S2bFBCR6PRgk7rR54ruH178=w466-h657-no?authuser=0"></a></p>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/Yct_wsJx5FQcDHPVvAtMCQa3y76ePtjvSeBJjbsMTXhSEpjyCddOrWFHBwqcvbLMM2OBo_nfIvLkIJ2XIKoUNAZP3HsWIY3Ygvu1ht0AyGcDnF-lLKpnebV7wO8Z1_YpeKzwlYh5h3eXRshDfVRrNNivMeT20rna7hm7TmKtMDIKG_q5p_f9Ji7E7_kd7e_EQcBGXUlPHp5P1fs3K41AYnkc5PfPtN_JcPazeeCgaTzieHMnEEAZSj6gGpHDKOctQMBCSnFFa32h-UZ7p4JoEQt7qDnydTbAZHM5fdVNOiYRzMAZYuJf1JIr_uQv-29y2VYlAi9QYUW9XH9fX5T7LyczVoW3F9IO2CwcID0cn7NmagzYkwoRCymc-9LqlTrlo8RMkNBqIP1x36mChnWznSe2nmuYRWyulBg6ngJ1FH3pKe1yva-SpUZX_yPY1K34U6Wg8HZAibNtk_aAQBOIuYeRMJhLEWmJu9fwhI3ySq9lwsaNb3kCHpXt0a1BiTatmzkJ-WfEo0JJlfqQpSK_WbTG0VasShcgRUu4_lSc7tBs6CrZuXTogmpMmvlfxTHvCJS3iSgMXgwFswBWgNu5N0Ni0cUXuO5Qp8bBvXL6ygGcEE4Sn8zQUB8jbQV-1JQlObibGx7_EdHFOSkHDWlOTLtxmBhtoBgDQ3SuUNhXgDWWMBMOW3gVDuuMBjr8D8g=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/Yct_wsJx5FQcDHPVvAtMCQa3y76ePtjvSeBJjbsMTXhSEpjyCddOrWFHBwqcvbLMM2OBo_nfIvLkIJ2XIKoUNAZP3HsWIY3Ygvu1ht0AyGcDnF-lLKpnebV7wO8Z1_YpeKzwlYh5h3eXRshDfVRrNNivMeT20rna7hm7TmKtMDIKG_q5p_f9Ji7E7_kd7e_EQcBGXUlPHp5P1fs3K41AYnkc5PfPtN_JcPazeeCgaTzieHMnEEAZSj6gGpHDKOctQMBCSnFFa32h-UZ7p4JoEQt7qDnydTbAZHM5fdVNOiYRzMAZYuJf1JIr_uQv-29y2VYlAi9QYUW9XH9fX5T7LyczVoW3F9IO2CwcID0cn7NmagzYkwoRCymc-9LqlTrlo8RMkNBqIP1x36mChnWznSe2nmuYRWyulBg6ngJ1FH3pKe1yva-SpUZX_yPY1K34U6Wg8HZAibNtk_aAQBOIuYeRMJhLEWmJu9fwhI3ySq9lwsaNb3kCHpXt0a1BiTatmzkJ-WfEo0JJlfqQpSK_WbTG0VasShcgRUu4_lSc7tBs6CrZuXTogmpMmvlfxTHvCJS3iSgMXgwFswBWgNu5N0Ni0cUXuO5Qp8bBvXL6ygGcEE4Sn8zQUB8jbQV-1JQlObibGx7_EdHFOSkHDWlOTLtxmBhtoBgDQ3SuUNhXgDWWMBMOW3gVDuuMBjr8D8g=w466-h657-no?authuser=0"></a></p>
+                    <p align="center"><a href="https://lh3.googleusercontent.com/4ZugoSNhz75z_1REZxw9v4-i3VrKm0UdNcRMsCAnx0K0uVWN0-Vmfk3GeNTwZ6s4kcHsHH7Pie4Zerac89HQ0kUfEim1FyxGmiybeXJ5NwwPb_VERn_ihs2XCYTNzOE1IrCbjAANWbUxnGp17XFWmUdA8pBLpJWjc7SMVXSj45sRvMjbX22y3IMV75YVay8JoKyuKVxGymFNzqNo6plLuXBRaL7L4Kzy6rynUBYnV8mkCKbuMGr7aka9M1fsg7btOwZw7wRaw4sMJIr16i3cDH5v9oNryLfMEVMcCMtVjpakDWb31A5B8q8d4ykjTOBcJzaurnoWnN1N3kduoZ2QrLkisbJQX1LIEDuclzi4_7GFEoA9ip8iI_yxuCDRyGiXJ0ylcsF_MkwTljECVsKBCQBsNYPWuKnHAa2MrCJQF4Tp18eUrddLIgKTE113scj2n5OMI66YcDW3bf_E5UI0Cnq4NRARlWU4B6rn4VSotP3Nq9fkW4P8ZUldJDhFjaG8KFi83HymUDPCBhQKmJhehkWek5Z36OCpEMDdpgCcgVXkmaSZbs47rBo0O4djnUz7t8gcDKkmVY5IkkFE0lVQUmliSyYqSfnaIwqZtFj09EFzH6BzZy0aPJeI0rRDEv4oeCwUYAEv9cR0L-6kPYtoT-BzxcoDVDV6Py3Cn2FEFgo224EHU28uPAB9GnngGc0=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/4ZugoSNhz75z_1REZxw9v4-i3VrKm0UdNcRMsCAnx0K0uVWN0-Vmfk3GeNTwZ6s4kcHsHH7Pie4Zerac89HQ0kUfEim1FyxGmiybeXJ5NwwPb_VERn_ihs2XCYTNzOE1IrCbjAANWbUxnGp17XFWmUdA8pBLpJWjc7SMVXSj45sRvMjbX22y3IMV75YVay8JoKyuKVxGymFNzqNo6plLuXBRaL7L4Kzy6rynUBYnV8mkCKbuMGr7aka9M1fsg7btOwZw7wRaw4sMJIr16i3cDH5v9oNryLfMEVMcCMtVjpakDWb31A5B8q8d4ykjTOBcJzaurnoWnN1N3kduoZ2QrLkisbJQX1LIEDuclzi4_7GFEoA9ip8iI_yxuCDRyGiXJ0ylcsF_MkwTljECVsKBCQBsNYPWuKnHAa2MrCJQF4Tp18eUrddLIgKTE113scj2n5OMI66YcDW3bf_E5UI0Cnq4NRARlWU4B6rn4VSotP3Nq9fkW4P8ZUldJDhFjaG8KFi83HymUDPCBhQKmJhehkWek5Z36OCpEMDdpgCcgVXkmaSZbs47rBo0O4djnUz7t8gcDKkmVY5IkkFE0lVQUmliSyYqSfnaIwqZtFj09EFzH6BzZy0aPJeI0rRDEv4oeCwUYAEv9cR0L-6kPYtoT-BzxcoDVDV6Py3Cn2FEFgo224EHU28uPAB9GnngGc0=w466-h657-no?authuser=0"></a></p> 
+                    <p align="center"><a href="https://lh3.googleusercontent.com/gQ6oSQC2Nqj7O6tEqB5m1ZDaSuMagFcL-NIU5RJAX2ivpiPw-8X5G-7GQI_F5o80qbtJiNqn3yx3weCqiXtKnHouv3E_yWZxMGjpXhrjjYQ23ZN7KSfxDCESivD9z66KeYaCCepuLqaQWx0T4PR-gFHFO-1e8T4EdOYy8pRxVbcGx3VPQU61Lou7Z_q8awQnoSo6tAEZfLHF8Qq-2n-LpUvK5HvnT6agj66uq86SkBXIBh3NgD5-voXeCpvAG_P_61dcNS7OpTJ78PGt_LmhBpwyUD5u8I0OSZSQUsN6k0XPi-lWlH7VKyRQc521IJzVNgNJtmSeqOUgQ7dDt6igkEuGlU00Ejm2WqiIg0zk_ueeir25DA45y24d5Flu8ZUejltlFs6hnQgUx_aDWnO55chPIqCSvyJU3ysCXB9W5xCwmtuellgh_kkvlTXT8x_cc0i1X89QhlKppseVxAgpHnY-1zNXc7mesM4yaHvo2R2MLvQQSKCViFAregCwBq7wVLKdxCWUhEwECNORCZGD1JIquhTq1gfcoXLNebtuXVyeDXfAHT2APIF4V6Si7KeBpnCdTI2XfCqIbY5Lee4UU6oo78ACczi9D4DoZ8pHv2OiFUScIEiSx-V_MJQbTodBJskqufBnIEEztbSyIa4RVJQaKPvjhavEl5wSbW50sk-WOuT76f_i2z86RlcWOek=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/gQ6oSQC2Nqj7O6tEqB5m1ZDaSuMagFcL-NIU5RJAX2ivpiPw-8X5G-7GQI_F5o80qbtJiNqn3yx3weCqiXtKnHouv3E_yWZxMGjpXhrjjYQ23ZN7KSfxDCESivD9z66KeYaCCepuLqaQWx0T4PR-gFHFO-1e8T4EdOYy8pRxVbcGx3VPQU61Lou7Z_q8awQnoSo6tAEZfLHF8Qq-2n-LpUvK5HvnT6agj66uq86SkBXIBh3NgD5-voXeCpvAG_P_61dcNS7OpTJ78PGt_LmhBpwyUD5u8I0OSZSQUsN6k0XPi-lWlH7VKyRQc521IJzVNgNJtmSeqOUgQ7dDt6igkEuGlU00Ejm2WqiIg0zk_ueeir25DA45y24d5Flu8ZUejltlFs6hnQgUx_aDWnO55chPIqCSvyJU3ysCXB9W5xCwmtuellgh_kkvlTXT8x_cc0i1X89QhlKppseVxAgpHnY-1zNXc7mesM4yaHvo2R2MLvQQSKCViFAregCwBq7wVLKdxCWUhEwECNORCZGD1JIquhTq1gfcoXLNebtuXVyeDXfAHT2APIF4V6Si7KeBpnCdTI2XfCqIbY5Lee4UU6oo78ACczi9D4DoZ8pHv2OiFUScIEiSx-V_MJQbTodBJskqufBnIEEztbSyIa4RVJQaKPvjhavEl5wSbW50sk-WOuT76f_i2z86RlcWOek=w466-h657-no?authuser=0"></a></p>                       
+                    <p align="center"><a href="https://lh3.googleusercontent.com/8CbZsEr1paQRq5SDs0tqCdlA3nRLra_bFRbdVsCcGH2EI4_cOdIzEcw_Db1W-o9ZTxwbUl2JffKVrlaDVDXEgxfXIC4UZpn6ppWt-f1YgVYX7TWeE9gJiMZw_cKO-YGzE51sNovSTNZk_EJQt7lJ47XVQb-Sf2kQTkQFfka4Z5BrU3OwD6B8cbKPInum5ieCNtKjcqvt8DrGNSCblxLHHk2uaYTDUUENJVyzZTlgMLKz_1rwB1Uq8UOfwP55x7qsogLkGGBcDpX8uv7VCxP8VAZKpLESw3hyNZgVG2U619gATZbtsNei5npoNqOWPMh-x1LcY29gbV5kNQtNf3D7CPqpF6523vCifbVOM_T-oyDl4ZJX2VQukyr6wNEH-JY6LM5G3sih_lCTyYyOPFnilgHcbnEnb89cOUOiFcfKS38rlxeQSoMfifAXuqFxJOLVX1wSbuXrh8AkqAkjSP8GYQYynrZgvw5tC0WKgtQkPR3x_Tzdrs8IckqezAszeGr9c0oec4FiEwKBOXwMZaQsbvb_JUc_2p8dO--HNhH_T0_r2xJPv8iqxxGPxXQK3ZQ9AiI2SKQPKj9G3CEunPJZJ4D-7Ni1BuDgDA0sBRIF9hEmcOfmDO8yLB0-z7G2RdWkztoc80jOH3IEka6v_9zGX2Xix2hJd0fGhVU-hHhLPwCuMAfjII_TfnyD0aaZ3wU=w466-h657-no?authuser=0"><img src="https://lh3.googleusercontent.com/8CbZsEr1paQRq5SDs0tqCdlA3nRLra_bFRbdVsCcGH2EI4_cOdIzEcw_Db1W-o9ZTxwbUl2JffKVrlaDVDXEgxfXIC4UZpn6ppWt-f1YgVYX7TWeE9gJiMZw_cKO-YGzE51sNovSTNZk_EJQt7lJ47XVQb-Sf2kQTkQFfka4Z5BrU3OwD6B8cbKPInum5ieCNtKjcqvt8DrGNSCblxLHHk2uaYTDUUENJVyzZTlgMLKz_1rwB1Uq8UOfwP55x7qsogLkGGBcDpX8uv7VCxP8VAZKpLESw3hyNZgVG2U619gATZbtsNei5npoNqOWPMh-x1LcY29gbV5kNQtNf3D7CPqpF6523vCifbVOM_T-oyDl4ZJX2VQukyr6wNEH-JY6LM5G3sih_lCTyYyOPFnilgHcbnEnb89cOUOiFcfKS38rlxeQSoMfifAXuqFxJOLVX1wSbuXrh8AkqAkjSP8GYQYynrZgvw5tC0WKgtQkPR3x_Tzdrs8IckqezAszeGr9c0oec4FiEwKBOXwMZaQsbvb_JUc_2p8dO--HNhH_T0_r2xJPv8iqxxGPxXQK3ZQ9AiI2SKQPKj9G3CEunPJZJ4D-7Ni1BuDgDA0sBRIF9hEmcOfmDO8yLB0-z7G2RdWkztoc80jOH3IEka6v_9zGX2Xix2hJd0fGhVU-hHhLPwCuMAfjII_TfnyD0aaZ3wU=w466-h657-no?authuser=0"></a></p>
+
+                    
+                
+
+</div>
+    <div class="lateral">
+        <br></br>
+        <h3><p align="center">Site produzido por alunos da <a href="https://www.etecguarulhos.com.br/">Etec Guarulhos</a></p></h3>
+        <a href="https://www.etecguarulhos.com.br/"><img src="https://static.wixstatic.com/media/ab56c3_cc41fe0701e8447596e6a640af90598d~mv2.png/v1/fill/w_125,h_80,al_c,q_85,usm_0.66_1.00_0.01/etec_gru.webp" id="logo" ></a>
+        <br></br>
+        <br></br>
+        <br></br>
+        <p align="center">Você pode acessar o site da escola clicando na logo acima.</p>    
+        <br></br>
+        <p align="center">
+        Alex Corte<br>
+        Beatriz Fonseca<br>
+        Gabriel Salomão<br>
+        Maria Eduarda Monteiro</p>        
+        </div>
+    
+</main>
+</html>
