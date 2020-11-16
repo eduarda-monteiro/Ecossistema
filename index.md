@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="pt">
 <head>
   <meta charset="utf-8"/>
@@ -122,14 +122,10 @@ color: rgb(194, 13, 13);
         práticas simples que diminuiriam os danos causados ao meio ambiente.</b></p>
     </div>
     <div class="lateral">
-    <br></br>
     <h3><p align="center">Site produzido por alunos da <a href="https://www.etecguarulhos.com.br/">Etec Guarulhos</a></p></h3>
     <a href="https://www.etecguarulhos.com.br/"><img src="https://static.wixstatic.com/media/ab56c3_cc41fe0701e8447596e6a640af90598d~mv2.png/v1/fill/w_125,h_80,al_c,q_85,usm_0.66_1.00_0.01/etec_gru.webp" id="logo" ></a>
-    <br></br>
-    <br></br>
-    <br></br>
+    <br>
     <p align="center">Você pode acessar o site da escola clicando na logo acima.</p>       
-    <br></br>
     <p align="center
     ">
     Alex Corte<br>
